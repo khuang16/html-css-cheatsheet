@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Kristy's HTML + CSS Cheatsheet</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Selector Type
+                </th>
+                <th>
+                    HTML Element
+                </th>
+                <th>
+                    CSS Selector
+                </th>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Type Selector aka Tag Name or Element Selector
+                </td>
+                <td>
+                    <span class="code">&lt;h1&gt;Text&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">p {
+                    <br>    color: red;
+                    <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Class Selector
+                </td>
+                <td>
+                    <span class="code">&lt;h1 class='brand'&gt;Text&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">.brand {
+                    <br>    color: red;
+                    <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ID Selector
+                </td>
+                <td>
+                    <span class="code">&lt;h1 id='large-title'&gt;&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">#h1 {
+                    <br>    color: red;
+                    <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Attribute Selector
+                </td>
+                <td>
+                    <span class="code">&lt;a href=''&gt;&lt;/a&gt;</span>
+                </td>
+                <td>
+                    <span class="code">[href] {
+                    <br>    color: red;
+                    <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Attribute Selector with Type and Value
+                </td>
+                <td>
+                    <span class="code">&lt;img src='/images/winter.jpg'&gt;</span>
+                </td>
+                <td>
+                    <span class="code">img[src*='winter'] {
+                        <br>    color: red;
+                        <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Pseudo-Class Selector
+                </td>
+                <td>
+                    <span class="code">&lt;h1&gt;Text&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">h1:hover {
+                        <br>    color: red;
+                        <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Multiple Classes
+                </td>
+                <td>
+                    <span class="code">&lt;h1 class='green bold'&gt;Text&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">.green {
+                        <br>    color: green;
+                        <br>}
+                        <br>.bold {
+                            <br>    font-weight: bold;
+                            <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Chaining
+                </td>
+                <td>
+                    <span class="code">&lt;h1 class='special'&gt;Text&lt;/h1&gt;</span>
+                </td>
+                <td>
+                    <span class="code">h1.special {
+                        <br>    color: green;
+                        <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Descendents
+                </td>
+                <td>
+                    <span class="code">&lt;ul class='main-list'&gt;
+                        <br>&lt;li&gt;Text&lt;/li&gt;
+                        <br>&lt;/ul&gt;</span>
+                </td>
+                <td>
+                    <span class="code">.main-list li {
+                        <br>    color: green;
+                        <br>}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Multiple Selectors
+                </td>
+                <td>
+                </td>
+                <td>
+                    <span class="code">h1, .menu {
+                        <br>    color: green;
+                        <br>}</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Specificity: ID > Class > Type</h2>
+    <p><strong>Note:</strong> Adding more than one tag, class, or ID increases the specificity.</p>
+</body>
+</html>
